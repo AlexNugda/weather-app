@@ -1,0 +1,122 @@
+@import '_background';
+@import '_components';
+
+::placeholder {
+  color: grey;
+}
+
+.weather-app-root,
+#app {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.weather-app-root * {
+  box-sizing: border-box;
+}
+
+.main-content {
+  margin: 50px auto 20px;
+}
+
+.error {
+  position: absolute;
+  top: 10px;
+  color: rgb(195, 60, 84);
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+/* SEARCH BAR */
+
+.search-bar {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.search-form {
+  display: flex;
+}
+
+.search-form > *,
+.today-forecast,
+.future-forecast,
+.favorite-list,
+.recent-list,
+.btn-star,
+.unit-switch,
+.btn-delete,
+.recent-list-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.search-form > * {
+  height: 50px;
+}
+
+.btn-star,
+.btn-search {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  outline: none;
+}
+
+.search-form > *:hover,
+.search-form > *:focus,
+.btn-star:hover,
+.btn-star:focus,
+.unit-switch:hover,
+.unit-switch:focus,
+.next-forecast:hover,
+.btn-delete:hover,
+.btn-delete:focus,
+.recent-list-item:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.search-location {
+  flex-grow: 1;
+  margin-right: 5px;
+  padding-left: 10px;
+  outline: none;
+}
+
+/* TODAY FORECAST */
+
+.today-forecast {
+  padding: 20px;
+}
+
+.current-icon-big {
+  text-align: center;
+}
+
+.city {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.city-name {
+  flex-grow: 1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 2rem;
+}
+
+.date-info {
+  display: flex;
+  justify-content: center;
+  //margin-bottom: 20px;
+}
+
+.current-day,
+.current-date {
+  text-transform: uppercase;
+  margin: 0px 5px;
+}
+
+@import '_forecast';
+@import '_recent';

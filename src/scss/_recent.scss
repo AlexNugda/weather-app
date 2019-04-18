@@ -1,0 +1,46 @@
+.favorite-history-wrapper {
+  display: flex;
+}
+
+.favorite-list,
+.recent-list {
+  padding: 10px;
+  position: relative;
+  flex-basis: 320px;
+  flex-grow: 1;
+}
+
+.favorite-list {
+  margin-right: 10px;
+}
+
+.recent-header {
+  display: inline-block;
+  font-size: 0.8rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.btn-delete {
+  background: transparent;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+.fav-recent-list {
+  list-style: none;
+  margin: 5px 0;
+  padding-left: 10px;
+}
+
+.recent-list-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  background: transparent;
+  padding-left: 5px;
+  font-size: 0.9rem;
+}

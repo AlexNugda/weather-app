@@ -1,0 +1,97 @@
+.forecast {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.current-icon-big,
+.temperature {
+  font-size: 4rem;
+}
+
+.current-icon-big img {
+  width: 100px;
+  vertical-align: bottom;
+}
+
+.general-description {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.forecast-extended {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.forecast-wrapper {
+  margin: 5px;
+  font-size: 1.2rem;
+}
+
+.icon-wrap {
+  padding: 3px;
+}
+
+.hide-input-radio {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  position: absolute;
+  -webkit-appearance: none;
+}
+
+.unit-switch {
+  display: inline-block;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+}
+
+.temp-unit-switch {
+  line-height: 50%;
+}
+
+.temperature-value {
+  font-size: 6rem;
+}
+
+.temp-switch-ctrl:checked + .unit-switch,
+.units-switch-ctrl:checked + .unit-switch {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/*FUTURE FORECAST*/
+
+.future-forecast {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.next-forecast {
+  padding: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.next-date {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.next-description {
+  font-size: 0.8rem;
+}
+
+.next-temperature {
+  font-size: 1.2rem;
+}
+
+.next-temperature::after {
+  content: '°';
+}
